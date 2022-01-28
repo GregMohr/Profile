@@ -1,0 +1,6 @@
+History
+Starting site with HTML, CSS, Bootstrap and JavaScript
+
+Planned Changes:
+-Convert to React in order to better follow DRY in HTML
+-Overall theme change, possibly involving a paralaxing starfield background
