@@ -3,7 +3,6 @@ Original build with HTML, CSS, Bootstrap and JavaScript
 
 Current Fixes:
 -Responsive layout terrible on mobile; current project card width good, they need to stack
--Replace scrollbar
 -Projects: reduce card-text font
 -Projects: spruce up card style
 
