@@ -2,11 +2,11 @@ History
 Starting site with HTML, CSS, Bootstrap and JavaScript
 
 Current Fixes:
+-Responsive layout terrible on mobile
 -Add name and contact buttons to left of nav for pages not Home
 -Projects: reduce card-text font
 -Projects: spruce up card style
 -Projects: enable sticky navbar
--Home: tooltips
 
 Planned Changes:
 -Convert to React in order to better follow DRY in HTML
