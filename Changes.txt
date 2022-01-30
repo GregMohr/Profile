@@ -1,11 +1,12 @@
 History
 Original build with HTML, CSS, Bootstrap and JavaScript
 
-Current Fixes:
+Current Fixes in progress:
+-Dynamically add Project Cards and Challenge Cards through JS
 -Responsive layout terrible on mobile; current project card width good, they need to stack
 -Projects: reduce card-text font
--Projects: spruce up card style
 
 Planned Changes:
 -Convert to React in order to better follow DRY in HTML
+-Add Challenges section
 -Overall theme change, possibly involving a paralaxing starfield background
