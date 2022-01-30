@@ -1,10 +1,10 @@
 History
-Original build with HTML, CSS, Bootstrap and JavaScript
+Original build with HTML, CSS/Bootstrap and JavaScript
 
 Current Fixes in progress:
--Dynamically add Project Cards and Challenge Cards through JS
--Responsive layout terrible on mobile; current project card width good, they need to stack
--Projects: reduce card-text font
+-Responsive layout terrible on mobile; cols not stacking; nav toggle position always right
+-Focus bootsrap.css into profile.css
+-favicon
 
 Planned Changes:
 -Convert to React in order to better follow DRY in HTML

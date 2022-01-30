@@ -21,7 +21,7 @@ const projectCards = [
    imageAlt: "WikiWindow image",
    title: "WikiWindow",
    subtitle: "Working w/APIs",
-   content: "Timer that counts in Pomodoro phases and rests",
+   content: "Toolbar to help you search and discover on Wikipedia",
    repository: "https://github.com/GregMohr/WikiWindow",
    btnLink: "https://gregmohr.github.io/WikiWindow",
    btnText: "Demo",
@@ -58,7 +58,7 @@ const projectCards = [
 const createCard = (cardContent) => {
   const btnState = cardContent.btnActive ? "" : "disabled";
   return `
-  <div class="card col-3 m-1">
+  <div class="card col-3 m-1 card-gradient">
     <div class="row">
       <div class="col-5">
         <img src="${cardContent.image}" class="card-img-top m-2" alt="${cardContent.imageAlt}"> 
@@ -66,7 +66,8 @@ const createCard = (cardContent) => {
       <div class="card-body col-6 pt-2 ps-1 pe-3">
         <h5 class="card-title mb-1 bg-dark text-center">${cardContent.title}</h5>
         <h6 class="text-center">${cardContent.subtitle}</h6>
-        <p class="card-text h-50 mb-2">${cardContent.content}</p>
+        <hr class="m-0" />
+        <p class="card-text h-50 mb-1 px-1">${cardContent.content}</p>
         <div class="flex-row d-flex justify-content-between">
           <a href="${cardContent.repository}" class="card-link" target="_blank">Repository</a>
           <a href="${cardContent.btnLink}" class="btn btn-primary btn-sm me-2 ${btnState}" target="_blank">${cardContent.btnText}</a>
