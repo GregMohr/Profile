@@ -58,7 +58,7 @@ const projectCards = [
 const createCard = (cardContent) => {
   const btnState = cardContent.btnActive ? "" : "disabled";
   return `
-  <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 m-1 card-gradient" style="min-width: 24em; max-width: 24em">
+  <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 m-1 card-gradient" style="width: 24em;">
     <div class="row">
       <div class="col-5">
         <img src="${cardContent.image}" class="card-img-top m-2" alt="${cardContent.imageAlt}"> 
