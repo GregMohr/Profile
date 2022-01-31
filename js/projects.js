@@ -78,12 +78,18 @@ const createCard = (cardContent) => {
   `;
 }
 
-let allCards = "";
+let outputHTML = "";
 
 projectCards.forEach(cardContent => {
   const newCard = createCard(cardContent);
-  console.log(newCard);
-  allCards += newCard;
+  outputHTML += newCard;
 });
 
-document.getElementById("cardRow").innerHTML = allCards;
+document.getElementById("cardRow").innerHTML = outputHTML;
+/*
+create all cards and insert
+  create all cards
+    iterate card info and for each card
+      create 1 card and append to output string
+  insert output string to document
+*/

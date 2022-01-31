@@ -1,60 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Greg Mohr's Software Development Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <div class="col d-flex align-items-center">
-        <p class="align-self-bottom fs-5 fw-bolder m-0 me-2">Greg Mohr</p>
-        <a href="./assets/Greg_Mohr_Resume.pdf" class="m-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Resume" download><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
-        <a href="mailto: gregjmohr@gmail.com" class="m-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="mailto: gregjmohr@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-        <a href="https://github.com/GregMohr" class="m-2" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub Repos"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/greg-mohr" class="m-2" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="experience.html">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="challenges.html">Challenges</a></li> -->
-        </ul>
-      </div>
-      <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    </div>
-  </nav>
-  <!-- Header -->
-  <header class="py-5 bg-image-full" style="background-image: url('./images/simpleblacksquaresbackground.jpeg')">
-    <div class="text-center my-5">
-      <h1 class="text-white fs-3 fw-bolder">Technical Experience</h1>
-    </div>
-  </header>
-  <!-- Content -->
-  <section id="content" class="container-fluid scrollme">
-    <!-- Proficiencies -->
+const sections = [{
+  title: "Technical Proficiencies",
+  content: "While I have experience in multiple languages, I find I'm most drawn to JavaScript and it's surrounding technologies. It's functional nature seems very intuitive to me. My experience in JavaScript, of course, extends to various libraries/frameworks (AngularJS, React.js, jQuery, Express.js) and other related technologies (Node.js, HTML, CSS, Bootstrap). I'm also well versed in SQL and NoSQL databases and have a good amount of experience and enjoy coding in C#. While I haven't used them extensively, I have training in and am fairly familiar with Python and Java."
+}];
+
+const createUpperSection = (sectionContent) => {
+  return `
     <div class="container mt-4">
       <div class="row rounded">
         <div class="col-md-12 col-lg-2 p-5 ps-3">
-          <h3 class="m-0">Technical Proficiencies</h3>
+          <h3 class="m-0">${sectionContent.title}</h3>
         </div>
         <div class="col pt-4 ms-4 me-3">
-          <!-- lodash, underscore.js, fullpage.js, sass, auth0  -->
-          <p class="m-0">While I have experience in multiple languages, I find I'm most drawn to JavaScript and it's surrounding technologies. It's functional nature seems very intuitive to me. My experience in JavaScript, of course, extends to various libraries/frameworks (AngularJS, React.js, jQuery, Express.js) and other related technologies (Node.js, HTML, CSS, Bootstrap). I'm also well versed in SQL and NoSQL databases and have a good amount of experience and enjoy coding in C#.</p>
-          <p class="mt-2">While I haven't used them extensively, I have training in and am fairly familiar with Python and Java.</p>
+          <p class="m-0">${sectionContent.content}</p>
         </div>
       </div>
-    </div>
+    </div>` 
+}
+
+const createExpSection = (sectionContent) => {
+
+}
+
+
+/*
     <!-- Work Gap -->
-    <div class="container mt-4">
-      <div class="row rounded">
+    <div class="container mt-4 text-dark">
+      <div class="row rounded bg-secondary">
         <div class="col-2 p-5 ps-3">
           <h3 class="m-0">The Gap</h3>
         </div>
@@ -63,16 +34,14 @@
         </div>
       </div>
     </div>
-    
     <!-- Experience -->
-    <div class="container mt-4">
-      <div class="row rounded">
+    <div class="container mt-4 text-dark">
+      <div class="row rounded bg-secondary">
         <h3 class="m-0 p-3">Experience</h3>
       </div>
     </div>
-
-    <div class="container mt-2">
-      <div class="row rounded">
+    <div class="container mt-2 text-dark">
+      <div class="row rounded bg-secondary">
         <!-- company, title, dates -->
         <div class="col-2 p-4 ps-3 pt-3">
           <h4 class="m-0 mt-2">Containn Inc.</h4>
@@ -89,7 +58,7 @@
           </ul>
         </div>
       </div>
-      <div class="row rounded mt-2">
+      <div class="row rounded bg-secondary mt-2">
         <!-- company, title, dates -->
         <div class="col-2 p-4 ps-3 pt-3">
           <h4 class="m-0 mt-2">Coding Dojo</h4>
@@ -105,7 +74,7 @@
           </ul>
         </div>
       </div>
-      <div class="row rounded mt-2">
+      <div class="row rounded bg-secondary mt-2">
         <!-- company, title, dates -->
         <div class="col-2 p-4 ps-3 pt-3">
           <h4 class="m-0 mt-2">Microsoft</h4>
@@ -121,7 +90,7 @@
           </ul>
         </div>
       </div>
-      <div class="row rounded mt-2">
+      <div class="row rounded bg-secondary mt-2">
         <!-- company, title, dates -->
         <div class="col-2 p-4 ps-3 pt-3">
           <h4 class="m-0 mt-2">Microsoft</h4>
@@ -137,9 +106,4 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./js/experience.js"></script>
-</body>
-</html>
+*/

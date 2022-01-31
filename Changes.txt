@@ -2,11 +2,20 @@ History
 Original build with HTML, CSS/Bootstrap and JavaScript
 
 Current Fixes in progress:
--Responsive layout terrible on mobile; cols not stacking; nav toggle position always right
+-Create classes (or maybe modules with functions to retun the html string) out of the HTML
+ that creates the HTML string of 1 object (product cards, challenge cards, experience section, lead section)
+ No: not much gain, just a change of verbiage in it's implementation, but not as clean as the current function,
+ because I'd have to create a constructor for each object and I never have to work with the values again after 
+ object creation, so no need to hold them in a class. If it was a product in an ecommerce site, it's make more sense to 
+ make a class becuase I'd be reusing the info in many functions across multiple aspects of the site (sending DB updates, in other
+ Views, etc)
+-Experience: New background color for sections; Determine col collapses;
+-Fix nav toggle position to always right
 -Focus bootsrap.css into profile.css
 -favicon
+-<!-- lodash, underscore.js, fullpage.js, sass, auth0  -->
 
 Planned Changes:
--Convert to React in order to better follow DRY in HTML
+-Convert to React?
 -Add Challenges section
 -Overall theme change, possibly involving a paralaxing starfield background
