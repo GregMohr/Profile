@@ -4,7 +4,7 @@ const leadSections = [{
 },
 {
   title: "The Gap",
-  content: "Following my last SDE position my family was hit with a series of issues we needed to attend to. I decided to take a bit of a break to refresh and possibly change my development focus. Then COVID happened and I became the primary caregiver for our son while my wife was able to continue working when allowed. I did explore game development during this time, mostly with Unity and Unreal Engine. As school has gone back to in person instruction I’ve had the time to focus on getting my skills back to where they need to be and start looking for a new position."
+  content: "Following my last SDE position my family was hit with a series of issues we needed to attend to. I decided to take a bit of a break to refresh and possibly change my development focus. Then COVID happened and I became the primary caregiver for our son while my wife was able to work through all but the worst of the pandemic. I did explore game development during this time, mostly with Unity and Unreal Engine. As school has gone back to in person instruction I’ve had the time to focus on getting my skills back to where they need to be. I'm refreshed, ready and excited to get back to coding!"
 }];
 
 const expSections = [{
