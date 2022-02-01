@@ -33,7 +33,7 @@ const projectCards = [
    content: "Currently HTML, CSS, Bootstrap and JavaScript",
    repository: "https://github.com/GregMohr/gregmohr.github.io",
    btnLink: "#!",
-   btnText: "Changes",
+   btnText: "About",
    btnActive: false},
   {image: "./images/tracker.png",
    imageAlt: "Bug Tracker image",
