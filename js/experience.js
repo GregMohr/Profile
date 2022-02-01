@@ -66,7 +66,7 @@ const createExpSection = (sectionContent) => {
   const content = createContentList(sectionContent.list);
   return `
     <div class="container mt-2">
-      <div class="row rounded border border-secondary d-flex align-items-center" style="height: 10em;">
+      <div class="row rounded border border-secondary d-flex align-items-center" style="min-height: 10em;">
         <div class="col-md-12 col-lg-2">
           <h4>${sectionContent.company}</h4>
           <h6>${sectionContent.dates}</h6>
