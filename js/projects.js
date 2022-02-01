@@ -81,8 +81,7 @@ const createCard = (cardContent) => {
 let outputHTML = "";
 
 projectCards.forEach(cardContent => {
-  const newCard = createCard(cardContent);
-  outputHTML += newCard;
+  outputHTML += createCard(cardContent);
 });
 
 document.getElementById("cardRow").innerHTML = outputHTML;
