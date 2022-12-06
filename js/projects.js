@@ -85,6 +85,7 @@ projectCards.forEach(cardContent => {
 });
 
 document.getElementById("cardRow").innerHTML = outputHTML;
+
 /*
 create all cards and insert
   create all cards

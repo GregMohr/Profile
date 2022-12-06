@@ -102,18 +102,3 @@ expSections.forEach(section => {
 })
 
 document.getElementById("content").innerHTML = outputHTML;
-/*
-
-          <h6 class="m-0 mt-1"></h6>
-          <h6 class="m-0 mt-1"></h6>
-        </div>
-        <div class="col pt-3 ms-4 me-3">
-          <!-- job description -->
-          <ul class="ps-3">
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-*/
