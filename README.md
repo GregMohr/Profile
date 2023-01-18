@@ -11,5 +11,6 @@ Standard portfolio features: About Me (with contact info), Work Experience and P
 https://gregmohr.github.io/
 
 ### From the repo:
-\* Clone the repository locally  
+\* Download a zip of the repository locally (<> Code button in top right > Download ZIP)
+\* Extract zip
 \* Set up a development server and run the project
